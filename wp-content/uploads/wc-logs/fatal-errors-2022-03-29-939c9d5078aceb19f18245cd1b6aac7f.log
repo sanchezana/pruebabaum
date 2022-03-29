@@ -1,0 +1,67 @@
+2022-03-29T16:32:54+00:00 CRITICAL Maximum execution time of 300 seconds exceeded en C:\xampp\htdocs\wordpress\wp-includes\Requests\Transport\cURL.php en la línea 165
+
+2022-03-29T19:05:35+00:00 CRITICAL syntax error, unexpected identifier "woocommerce_product_custom_fields" en C:\xampp\htdocs\wordpress\wp-content\themes\twentytwentyone\functions.php en la línea 661
+
+2022-03-29T19:05:51+00:00 CRITICAL syntax error, unexpected identifier "woocommerce_product_custom_fields" en C:\xampp\htdocs\wordpress\wp-content\themes\twentytwentyone\functions.php en la línea 661
+
+2022-03-29T19:09:55+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "woocommerce_product_custom_fields_save" not found or invalid function name in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:309
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-meta-boxes.php(224): do_action('woocommerce_pro...', 112, Object(WP_Post))
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(309): WC_Admin_Meta_Boxes->save_meta_boxes(112, Object(WP_Post))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\post.php(4687): do_action('save_post', 112, Object(WP_Post), true)
+#7 C:\xampp\htdocs\wordpress\wp-includes\post.php(4789): wp_insert_post(Array, false, true)
+#8 C:\xampp\htdocs\wordpress\wp-admin\includes\post.php(426): wp_update_post(Array)
+#9 C:\xampp\htdocs\wordpress\wp-admin\post.php(227): edit_post()
+#10 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php en la línea 309
+
+2022-03-29T19:20:19+00:00 CRITICAL syntax error, unexpected identifier "add_action" en C:\xampp\htdocs\wordpress\wp-content\themes\twentytwentyone\functions.php en la línea 671
+
+2022-03-29T19:20:43+00:00 CRITICAL Cannot redeclare shoptimizer_custom_quotes_field() (previously declared in C:\xampp\htdocs\wordpress\wp-content\themes\twentytwentyone\functions.php:673) en C:\xampp\htdocs\wordpress\wp-content\themes\twentytwentyone\functions.php en la línea 681
+
+2022-03-29T19:27:21+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "shoptimizer_custom_quotes_field" not found or invalid function name in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\single-product\product-image.php(52): do_action('woocommerce_pro...')
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1537): wc_get_template('single-product/...')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): woocommerce_show_product_images('')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\content-single-product.php(43): do_action('woocommerce_bef...')
+#9 C:\xampp\htdocs\wordpress\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#11 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\single-product.php(37): wc_get_template_part('content', 'single-product')
+#12 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php en la línea 307
+
+2022-03-29T19:27:29+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "shoptimizer_custom_quotes_field" not found or invalid function name in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\single-product\product-image.php(52): do_action('woocommerce_pro...')
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1537): wc_get_template('single-product/...')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): woocommerce_show_product_images('')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\content-single-product.php(43): do_action('woocommerce_bef...')
+#9 C:\xampp\htdocs\wordpress\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#11 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\single-product.php(37): wc_get_template_part('content', 'single-product')
+#12 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php en la línea 307
+
+2022-03-29T21:16:29+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file en C:\xampp\htdocs\wordpress\wp-content\themes\twentytwentyone\single-festival.php en la línea 14
+

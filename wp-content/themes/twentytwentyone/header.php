@@ -1,0 +1,36 @@
+<?php
+/**
+ * The header.
+ *
+ * This is the template that displays all of the <head> section and everything up until main.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package WordPress
+ * @subpackage Twenty_Twenty_One
+ * @since Twenty Twenty-One 1.0
+ */
+
+?>
+<!doctype html>
+<html <?php language_attributes(); ?> <?php twentytwentyone_the_html_classes(); ?>>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+<div class="contenido_header">
+<h2>PRODUCCIONES</h2><h5>CALACAS</h5>
+</div>
+<nav class="menu">
+	<a href="/wordpress/inicio">HOME</a>
+	<a href="/wordpress/festivales/">FESTIVALES</a>
+	<a href="/wordpress/producto/ticket/">CARRITO</a>
+	<div class="animation start-home"></div>
+</nav>
+	<div id="content" class="site-content">
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main">
